@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\views\\service\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\views\\service\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\views\\service\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\views\\service\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\controllers\\bancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\controllers\\bancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|d:\\career\\iti training - .net web development\\final project\\serviceprovider\\serviceprovider\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192C5C80-443A-49BE-BC39-7BF38FA610C2}|ServiceProvider\\ServiceProvider.csproj|solutionrelative:serviceprovider\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1337924956:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1449176975:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\Service\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ServiceProvider\\Views\\Service\\Edit.cshtml",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\Service\\Edit.cshtml",
+              "RelativeToolTip": "ServiceProvider\\Views\\Service\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T11:45:34.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\Service\\Index.cshtml",
+              "RelativeDocumentMoniker": "ServiceProvider\\Views\\Service\\Index.cshtml",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\Service\\Index.cshtml",
+              "RelativeToolTip": "ServiceProvider\\Views\\Service\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-15T09:43:17.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Database\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ServiceProvider\\Database\\AppDbContext.cs",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Database\\AppDbContext.cs",
+              "RelativeToolTip": "ServiceProvider\\Database\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-15T07:25:45.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "ServiceProvider\\Controllers\\ServiceController.cs",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "ServiceProvider\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwEIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-20T13:45:34.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\Service\\Add.cshtml",
+              "RelativeDocumentMoniker": "ServiceProvider\\Views\\Service\\Add.cshtml",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\Service\\Add.cshtml",
+              "RelativeToolTip": "ServiceProvider\\Views\\Service\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-08-20T13:45:47.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BanController.cs",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Controllers\\BanController.cs",
+              "RelativeDocumentMoniker": "ServiceProvider\\Controllers\\BanController.cs",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Controllers\\BanController.cs",
+              "RelativeToolTip": "ServiceProvider\\Controllers\\BanController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-19T23:58:25.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Program.cs",
+              "RelativeDocumentMoniker": "ServiceProvider\\Program.cs",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Program.cs",
+              "RelativeToolTip": "ServiceProvider\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-08-19T23:58:19.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "ServiceProvider\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\Career\\ITI Training - .NET Web Development\\Final Project\\ServiceProvider\\ServiceProvider\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "ServiceProvider\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-08-19T23:58:19.97Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

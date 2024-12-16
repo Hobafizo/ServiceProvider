@@ -1,0 +1,37 @@
+﻿@{
+	ViewData["Title"] = "Ban User";
+}
+
+@model BannedUser
+
+<h2 class="alert alert-info text-center">Ban User</h2>
+
+<form method="post" class="col-4" asp-controller="Ban" asp-action="PostAdd">
+
+	<div class="form-group">
+		<label asp-for="UserId"></label>
+		<input type="text" asp-for="UserId" class="form-control" aria-describedby="useridHelp" placeholder="Enter user ID">
+
+		<div class="row">
+			<small id="useridHelp" class="form-text text-muted">Enter ID of the user you want to ban.</small>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label asp-for="BanReason"></label>
+		<input type="text" asp-for="BanReason" class="form-control" aria-describedby="banHelp" placeholder="Enter reason for ban">
+
+		<div class="row">
+			<small id="banHelp" class="form-text text-muted">Choose a brief explaination why this user is getting banned.</small>
+			<span asp-validation-for="BanReason" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div asp-validation-summary="ModelOnly" class="form-group text-danger pt-3"></div>
+
+	<div class="mt-2">
+		<button type="submit" class="btn btn-primary">Ban</button>
+		<a class="btn btn-danger ms-2" asp-controller="Ban" asp-action="Index">Back</a>
+	</div>
+
+</form>

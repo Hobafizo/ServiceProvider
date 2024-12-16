@@ -1,0 +1,39 @@
+﻿@{
+	ViewData["Title"] = "Delete Service";
+}
+
+@model UserService?
+
+@if (Model != null)
+{
+	<h2 class="alert alert-info text-center">Delete Service</h2>
+
+	<dt>@Html.DisplayNameFor(x => x.User.Id)</dt>
+	<dd>@Html.DisplayFor(x => x.User.Id)</dd>
+
+	<dt>@Html.DisplayNameFor(x => x.User.Name)</dt>
+	<dd>@Html.DisplayFor(x => x.User.Name)</dd>
+
+	<dt>@Html.DisplayNameFor(x => x.User.Email)</dt>
+	<dd>@Html.DisplayFor(x => x.User.Email)</dd>
+
+	<dt>@Html.DisplayNameFor(x => x.Service.Id)</dt>
+	<dd>@Html.DisplayFor(x => x.Service.Id)</dd>
+
+	<dt>@Html.DisplayNameFor(x => x.Service.Name)</dt>
+	<dd>@Html.DisplayFor(x => x.Service.Name)</dd>
+
+	<dt>@Html.DisplayNameFor(x => x.Service.Description)</dt>
+	<dd>@Html.DisplayFor(x => x.Service.Description)</dd>
+
+	<form method="post" asp-controller="User" asp-action="PostDeleteService" asp-route-id="@Model.Id">
+		<div class="d-flex pt-1">
+			<button type="submit" class="btn btn-danger">Delete</button>
+			<a class="btn btn-danger ms-2" asp-controller="User" asp-action="Service" asp-route-id="@Model.UserId">Back</a>
+		</div>
+	</form>
+}
+else
+{
+	<h3 class="alert alert-danger text-center">Service could not be found.</h3>
+}

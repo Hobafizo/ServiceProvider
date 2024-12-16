@@ -1,0 +1,54 @@
+﻿@{
+	ViewData["Title"] = "User Services";
+}
+
+@model IUser
+
+@if (Model != null)
+{
+	<h2 class="alert alert-info text-center">User Services</h2>
+	
+	<a class="btn btn-info" asp-controller="User" asp-action="AddService" asp-route-id="@Model.Id">Add Service</a>
+	<a class="btn btn-danger" asp-controller="User" asp-action="Admin" asp-route-id="@Model.Id">Back</a>
+	
+	<table class="table table-hover table-bordered border-secondary table-striped mt-3">
+		<thead class="table-info border-secondary">
+			<tr>
+				<th>Service Id</th>
+				<th>Name of service</th>
+				<th>Description of service</th>
+				<th class="text-center" style="width: 5%;">Actions</th>
+			</tr>
+		</thead>
+	
+		<tbody>
+			@foreach (var item in Model.Services)
+			{
+				<tr class="align-middle">
+					<td>@item.Id</td>
+					<td>@item.Service.Name</td>
+					<td>@item.Service.Description</td>
+	
+					<td>
+						<div class="d-flex justify-content-center">
+							<a class="btn btn-sm btn-outline-danger" asp-controller="User" asp-action="DeleteService" asp-route-id="@item.Id">
+								<svg bootstrap-icon="Trash3" width="18" height="24"></svg>
+							</a>
+						</div>
+					</td>
+				</tr>
+			}
+		</tbody>
+	
+		<tfoot>
+			<tr>
+				<td>Total</td>
+				<td colspan="3">@Model.Services.Count() services</td>
+			</tr>
+		</tfoot>
+	</table>
+}
+else
+{
+	<h3 class="alert alert-danger text-center">User could not be found.</h3>
+}

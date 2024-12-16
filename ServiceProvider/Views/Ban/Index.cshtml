@@ -1,0 +1,51 @@
+﻿@{
+	ViewData["Title"] = "Ban Management";
+}
+
+@model IEnumerable<BannedUser>
+
+<h2 class="alert alert-info text-center">Ban Management</h2>
+
+<a class="btn btn-info" asp-controller="Ban" asp-action="Add">Ban User</a>
+<a class="btn btn-danger" asp-controller="User" asp-action="Index">Back</a>
+
+<table class="table table-hover table-bordered border-secondary table-striped mt-3">
+	<thead class="table-info border-secondary">
+		<tr>
+			<th>@Html.DisplayNameFor(x => x.UserId)</th>
+			<th>@Html.DisplayNameFor(x => x.User.Name)</th>
+			<th>@Html.DisplayNameFor(x => x.User.Email)</th>
+			<th>@Html.DisplayNameFor(x => x.BanReason)</th>
+			<th>@Html.DisplayNameFor(x => x.BanTime)</th>
+			<th class="text-center" style="width: 5%;">Actions</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr class="align-middle">
+				<td>@item.UserId</td>
+				<td>@item.User.Name</td>
+				<td>@item.User.Email</td>
+				<td>@item.BanReason</td>
+				<td>@item.BanTime</td>
+
+				<td>
+					<div class="d-flex justify-content-center">
+						<a class="btn btn-sm btn-outline-danger" asp-controller="Ban" asp-action="Delete" asp-route-id="@item.Id">
+							<svg bootstrap-icon="Trash3" width="18" height="24"></svg>
+						</a>
+					</div>
+				</td>
+			</tr>
+		}
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<td>Total</td>
+			<td colspan="5">@Model.Count() bans</td>
+		</tr>
+	</tfoot>
+</table>

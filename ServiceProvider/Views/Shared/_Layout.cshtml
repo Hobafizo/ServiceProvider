@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    
+@using ServiceProvider.Data;
+@using ServiceProvider.Helpers;
+@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+
+@{
+    // is logged in?
+    IUser? user = SessionHelper.GetUser(HttpContextAccessor);
+
+    // loading navigation items
+    List<NavItem> NavigationItems = new List<NavItem>();
+
+    if (user == null)
+    {
+        NavigationItems.Add(new NavItem("Home", "Home"));
+
+        NavigationItems.Add(new NavItem("Login", "User", "Login", NavItemPos.Right));
+        NavigationItems.Add(new NavItem("Register", "User", "Register", NavItemPos.Right));
+    }
+
+    else
+    {
+        NavigationItems.Add(new NavItem("Home", "User"));
+
+        NavigationItems.Add(new NavItem("Profile", "User", "Profile", NavItemPos.Right));
+        NavigationItems.Add(new NavItem("New Request", "Request", "Add", NavItemPos.Right));
+        NavigationItems.Add(new NavItem("Logout", "User", "Logout", NavItemPos.Right));
+    }
+
+    NavigationItems.Add(new NavItem("Privacy", "Home", "Privacy"));
+}
+
+@{
+    // retrieving current controller & action
+    var controllermodel = ViewContext.RouteData.Values["controller"];
+    var actionmodel = ViewContext.RouteData.Values["action"];
+
+    string? controller = controllermodel != null ? controllermodel.ToString() : null;
+    string? action = actionmodel != null ? actionmodel.ToString() : null;
+
+    // assigning selected navigation item
+    var selecteditem = NavigationItems.FirstOrDefault(
+        x => x.ControllerName == (controller != null ? controller.ToString() : string.Empty)
+            && (x.ActionName == action || (
+                                            (string.IsNullOrEmpty(action) || action == "Index")
+                                            && (string.IsNullOrEmpty(x.ActionName) || x.ActionName == "Index")
+                                          )
+               )
+    );
+    if (selecteditem != null)
+        selecteditem.Selected = true;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ServiceProvider.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-info border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+
+                <div class="col-2"></div>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/img/logo.svg" class="logo" />
+                </a>
+                <div class="col-1"></div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        @foreach (var item in NavigationItems)
+                        {
+                            if (item.Position == NavItemPos.Center)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white @item.SelectionProperties" asp-area="" asp-controller="@item.ControllerName" asp-action="@item.ActionName">@item.ItemName</a>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+                </div>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        @foreach (var item in NavigationItems)
+                        {
+                            if (item.Position == NavItemPos.Right)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white @item.SelectionProperties" asp-area="" asp-controller="@item.ControllerName" asp-action="@item.ActionName">@item.ItemName</a>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - ServiceProvider - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

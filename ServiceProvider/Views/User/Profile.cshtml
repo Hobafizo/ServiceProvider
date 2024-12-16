@@ -1,0 +1,73 @@
+﻿@{
+	ViewData["Title"] = "User Profile Overview";
+}
+
+@model IUser
+
+@if (Model != null)
+{
+	<h2 class="alert alert-info text-center">User Profile</h2>
+
+	<form method="post" class="col-4" asp-controller="User" asp-action="EditProfile" asp-route-id="@Model.Id" enctype="multipart/form-data">
+
+		<div class="form-group pt-2">
+			<label asp-for="Name"></label>
+			<input type="text" asp-for="Name" class="form-control" aria-describedby="nameHelp" placeholder="Your name">
+
+			<div class="row">
+				<small id="nameHelp" class="form-text text-muted">Can be your real name or username.</small>
+				<span asp-validation-for="Name" class="form-text text-danger"></span>
+			</div>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="BirthDate"></label>
+			<input type="date" asp-for="BirthDate" class="form-control" aria-describedby="dobHelp">
+
+			<div class="row">
+				<small id="dobHelp" class="form-text text-muted">Enter your date of birth.</small>
+				<span asp-validation-for="BirthDate" class="form-text text-danger"></span>
+			</div>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="ProfilePicture"></label>
+			<input type="file" class="form-control" accept=".png,.jpg" onchange="SetProfilePicture()" name="ppimg" id="ppimg" aria-describedby="pictureHelp">
+
+			<div class="row">
+				<small id="pictureHelp" class="form-text text-muted">[Optional] Choose a profile picture that represent you.</small>
+			</div>
+
+			<div class="col-4 pt-2 pb-1">
+				<img asp-controller="Home" src="~/@Model.ProfilePictureImage" id="ppic" style="max-height: 100px;" />
+			</div>
+		</div>
+
+		@if (ViewBag.Success != null && ViewBag.Success)
+		{
+			<p class="form-group ex text-success pt-4">Changes have been submitted successfully.</p>
+		}
+		else
+		{
+			<div asp-validation-summary="ModelOnly" class="form-group text-danger pt-4"></div>
+		}
+
+		<div class="mt-2">
+			<button type="submit" class="btn btn-primary">Submit Changes</button>
+			<a class="btn btn-danger ms-1 @Model.ProfilePictureState" asp-controller="User" asp-action="DeletePP" asp-route-id="@Model.Id">Delete Profile Picture</a>
+		</div>
+	</form>
+}
+else
+{
+	<h3 class="alert alert-danger text-center">User could not be found.</h3>
+}
+
+@section Scripts
+	{
+	<script>
+		function SetProfilePicture() {
+			document.getElementById('ppic').src = window.URL.createObjectURL(document.getElementById('ppimg').files[0]);
+		}
+	</script>
+}

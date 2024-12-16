@@ -1,0 +1,38 @@
+﻿@{
+	ViewData["Title"] = "Login";
+}
+
+@model IUser
+
+<h2 class="alert alert-info text-center">User Login</h2>
+
+<form method="post" class="col-4" asp-controller="User" asp-action="PostLogin">
+
+	<div class="form-group">
+		<label asp-for="Email"></label>
+		<input type="email" asp-for="Email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+		
+		<div class="row">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			<span asp-validation-for="Email" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label>Password</label>
+		<input type="password" asp-for="Password" class="form-control" aria-describedby="passwordHelp" placeholder="••••••••••">
+
+		<div class="row">
+			<small id="passwordHelp" class="form-text text-muted">Pick a strong password and don't share it with others.</small>
+			<span asp-validation-for="Password" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div asp-validation-summary="ModelOnly" class="form-group text-danger pt-3"></div>
+
+	<div class="mt-2">
+		<button type="submit" class="btn btn-primary">Login</button>
+		<a class="btn btn-success ms-1" asp-controller="User" asp-action="Register">Register</a>
+	</div>
+
+</form>

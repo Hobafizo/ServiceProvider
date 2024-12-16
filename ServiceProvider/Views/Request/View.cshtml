@@ -1,0 +1,57 @@
+﻿@{
+	ViewData["Title"] = "Service Request - Details";
+}
+
+@model ServiceRequest
+
+@if (Model != null)
+{
+	<h2 class="alert alert-info text-center">Service Request - Details</h2>
+
+	<form class="col-4">
+
+		<div class="form-group">
+			<label asp-for="Id"></label>
+			<input type="text" asp-for="Id" class="form-control" readonly>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="User.Name"></label>
+			<input type="text" asp-for="User.Name" class="form-control" readonly>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="User.Email"></label>
+			<input type="text" asp-for="User.Email" class="form-control" readonly>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="Service.Name"></label>
+			<input type="text" asp-for="Service.Name" class="form-control" readonly>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="Service.Description"></label>
+			<input type="text" asp-for="Service.Description" class="form-control" readonly>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="RequestTime"></label>
+			<input type="text" asp-for="RequestTime" class="form-control" readonly>
+		</div>
+
+		<div class="form-group pt-2">
+			<label asp-for="About"></label>
+			<div class="form-control" style="white-space: pre-wrap;" readonly>@Model.About.Replace("\\n", "\n").Replace("\\t", "\t")</div>
+		</div>
+
+		<div class="pt-3">
+			<a class="btn btn-danger" asp-controller="Request" asp-action="Index">Back</a>
+		</div>
+
+	</form>
+}
+else
+{
+	<h3 class="alert alert-danger text-center">Request could not be found.</h3>
+}

@@ -1,0 +1,90 @@
+﻿@{
+	ViewData["Title"] = "Registration";
+}
+
+@model IUser
+
+<h2 class="alert alert-info text-center">User Registration</h2>
+
+<form method="post" class="col-4" asp-controller="User" asp-action="PostRegister" enctype="multipart/form-data">
+
+	<div class="form-group">
+		<label asp-for="Name"></label>
+		<input type="text" asp-for="Name" class="form-control" aria-describedby="nameHelp" placeholder="Your name">
+
+		<div class="row">
+			<small id="nameHelp" class="form-text text-muted">Can be your real name or username.</small>
+			<span asp-validation-for="Name" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label asp-for="Email"></label>
+		<input type="email" asp-for="Email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+
+		<div class="row">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			<span asp-validation-for="Email" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label>Password</label>
+		<input type="password" asp-for="Password" class="form-control" aria-describedby="passwordHelp" placeholder="••••••••••">
+
+		<div class="row">
+			<small id="passwordHelp" class="form-text text-muted">Pick a strong password and don't share it with others.</small>
+			<span asp-validation-for="Password" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label>Confirm Password</label>
+		<input type="password" class="form-control" name="pwconfirm" id="pwconfirm" aria-describedby="passwordcHelp" placeholder="••••••••••">
+
+		<div class="row">
+			<small id="passwordcHelp" class="form-text text-muted">Type your password once again to confirm.</small>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label asp-for="BirthDate"></label>
+		<input type="date" asp-for="BirthDate" class="form-control" aria-describedby="dobHelp">
+
+		<div class="row">
+			<small id="dobHelp" class="form-text text-muted">Enter your date of birth.</small>
+			<span asp-validation-for="BirthDate" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label asp-for="ProfilePicture"></label>
+		<input type="file" class="form-control" accept=".png,.jpg" onchange="SetProfilePicture()" name="ppimg" id="ppimg" aria-describedby="pictureHelp">
+
+		<div class="row">
+			<small id="pictureHelp" class="form-text text-muted">[Optional] Choose a profile picture that represent you.</small>
+		</div>
+
+		<div class="col-4 pt-2 pb-1">
+			<img src="" id="ppic" style="max-height: 100px;" />
+		</div>
+	</div>
+
+	<div asp-validation-summary="ModelOnly" class="form-group text-danger pt-3"></div>
+
+	<div class="mt-2">
+		<button type="submit" class="btn btn-primary">Register</button>
+		<a class="btn btn-success ms-1" asp-controller="User" asp-action="Login">Login</a>
+	</div>
+
+</form>
+
+@section Scripts
+{
+	<script>
+		function SetProfilePicture()
+		{
+			document.getElementById('ppic').src = window.URL.createObjectURL(document.getElementById('ppimg').files[0]);
+		}
+	</script>
+}

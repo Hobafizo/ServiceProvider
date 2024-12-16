@@ -1,0 +1,86 @@
+﻿@{
+	ViewData["Title"] = "User Management";
+}
+
+@model IEnumerable<IUser>
+
+<h2 class="alert alert-info text-center">User Management</h2>
+
+<a class="btn btn-danger" asp-controller="User" asp-action="Index">Back</a>
+
+<table class="table table-hover table-bordered border-secondary table-striped mw-100 mt-3">
+	<thead class="table-info border-secondary">
+		<tr class="text-center">
+			<th>@Html.DisplayNameFor(x => x.Id)</th>
+			<th>@Html.DisplayNameFor(x => x.Name)</th>
+			<th>@Html.DisplayNameFor(x => x.Email)</th>
+			<th>@Html.DisplayNameFor(x => x.BirthDate)</th>
+
+			<th>@Html.DisplayNameFor(x => x.IsAdmin)</th>
+			<th>@Html.DisplayNameFor(x => x.BannedUser)</th>
+
+			<th>@Html.DisplayNameFor(x => x.Services)</th>
+			<th style="width: 15%;">Actions</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr class="align-middle text-center">
+				<td>@item.Id</td>
+				<td>@item.Name</td>
+				<td>@item.Email</td>
+				<td>@item.BirthDate</td>
+				<td>@item.IsAdmin</td>
+				<td>@(item.BannedUser != null ? "Yes" : "No")</td>
+				<td>@item.Services.Count</td>
+
+				<td>
+					<div class="d-flex justify-content-center">
+						<a class="btn btn-sm btn-outline-primary" title="View Profile" asp-controller="User" asp-action="Profile" asp-route-id="@item.Id">
+							<svg bootstrap-icon="Search" width="18" height="24"></svg>
+						</a>
+
+						<a class="btn btn-sm btn-outline-success ms-2" title="Manage Services" asp-controller="User" asp-action="Service" asp-route-id="@item.Id">
+							<svg bootstrap-icon="Tools" width="18" height="24"></svg>
+						</a>
+
+						@if (!item.IsAdmin)
+						{
+							<a class="btn btn-sm btn-outline-primary ms-2" title="Set Admin" asp-controller="User" asp-action="SetAdmin" asp-route-id="@item.Id" asp-route-to="true">
+								<svg bootstrap-icon="Person" width="18" height="24"></svg>
+							</a>
+						}
+						else
+						{
+							<a class="btn btn-sm btn-outline-danger ms-2" title="Remove Admin" asp-controller="User" asp-action="SetAdmin" asp-route-id="@item.Id" asp-route-to="false">
+								<svg bootstrap-icon="Person" width="18" height="24"></svg>
+							</a>
+						}
+
+						@if (item.BannedUser == null)
+						{
+							<a class="btn btn-sm btn-outline-danger ms-2" title="Ban User" asp-controller="Ban" asp-action="Add" asp-route-id="@item.Id">
+								<svg bootstrap-icon="ExclamationCircle" width="18" height="24"></svg>
+							</a>
+						}
+						else
+						{
+							<a class="btn btn-sm btn-outline-secondary ms-2" title="Unban User" asp-controller="Ban" asp-action="Delete" asp-route-id="@item.BannedUser.Id">
+								<svg bootstrap-icon="CheckCircle" width="18" height="24"></svg>
+							</a>
+						}
+					</div>
+				</td>
+			</tr>
+		}
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<td>Total</td>
+			<td colspan="7">@Model.Count() users</td>
+		</tr>
+	</tfoot>
+</table>

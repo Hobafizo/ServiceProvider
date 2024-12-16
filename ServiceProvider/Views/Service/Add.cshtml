@@ -1,0 +1,38 @@
+﻿@{
+	ViewData["Title"] = "Add Service";
+}
+
+@model Service
+
+<h2 class="alert alert-info text-center">Add Service</h2>
+
+<form method="post" class="col-4" asp-controller="Service" asp-action="PostAdd">
+
+	<div class="form-group">
+		<label asp-for="Name"></label>
+		<input type="text" asp-for="Name" class="form-control" aria-describedby="nameHelp" placeholder="Enter service name">
+
+		<div class="row">
+			<small id="nameHelp" class="form-text text-muted">Choose a name that describes the service.</small>
+			<span asp-validation-for="Name" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div class="form-group pt-2">
+		<label asp-for="Description"></label>
+		<input type="text" asp-for="Description" class="form-control" aria-describedby="descHelp" placeholder="Enter description of service">
+
+		<div class="row">
+			<small id="descHelp" class="form-text text-muted">Enter a description that sums up service qualities.</small>
+			<span asp-validation-for="Description" class="form-text text-danger"></span>
+		</div>
+	</div>
+
+	<div asp-validation-summary="ModelOnly" class="form-group text-danger pt-3"></div>
+
+	<div class="mt-2">
+		<button type="submit" class="btn btn-primary">Add</button>
+		<a class="btn btn-danger ms-2" asp-controller="Service" asp-action="Index">Back</a>
+	</div>
+
+</form>

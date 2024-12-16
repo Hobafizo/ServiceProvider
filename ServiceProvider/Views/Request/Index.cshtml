@@ -1,0 +1,52 @@
+﻿@{
+	ViewData["Title"] = "Service Requests";
+}
+
+@model IEnumerable<ServiceRequest>
+
+<h2 class="alert alert-info text-center">Service Requests</h2>
+
+<a class="btn btn-danger" asp-controller="User" asp-action="Index">Back</a>
+
+<table class="table table-hover table-bordered border-secondary table-striped mt-3">
+	<thead class="table-info border-secondary">
+		<tr>
+			<th>@Html.DisplayNameFor(x => x.Id)</th>
+			<th>@Html.DisplayNameFor(x => x.User.Name)</th>
+			<th>@Html.DisplayNameFor(x => x.User.Email)</th>
+			<th>@Html.DisplayNameFor(x => x.Service.Name)</th>
+			<th>@Html.DisplayNameFor(x => x.Service.Description)</th>
+			<th>@Html.DisplayNameFor(x => x.RequestTime)</th>
+			<th class="text-center" style="width: 5%;">Actions</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr class="align-middle">
+				<td>@item.Id</td>
+				<td>@item.User.Name</td>
+				<td>@item.User.Email</td>
+				<td>@item.Service.Name</td>
+				<td>@item.Service.Description</td>
+				<td>@item.RequestTime</td>
+
+				<td>
+					<div class="d-flex justify-content-center">
+						<a class="btn btn-sm btn-outline-primary" title="View Request" asp-controller="Request" asp-action="View" asp-route-id="@item.Id">
+							<svg bootstrap-icon="Search" width="18" height="24"></svg>
+						</a>
+					</div>
+				</td>
+			</tr>
+		}
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<td>Total</td>
+			<td colspan="6">@Model.Count() services</td>
+		</tr>
+	</tfoot>
+</table>

@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ServiceProvider
+build_property.RootNamespace = ServiceProvider
+build_property.ProjectDir = D:\Career\ITI Training - .NET Web Development\Final Project\ServiceProvider\ServiceProvider\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\Career\ITI Training - .NET Web Development\Final Project\ServiceProvider\ServiceProvider
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Ban/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Ban/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Ban/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Request/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Request/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Request/Submitted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxTdWJtaXR0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Request/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWVzdFxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Service/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Service/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Service/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZG1pblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/LoginRequired.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpblJlcXVpcmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/LogoutRequired.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dvdXRSZXF1aXJlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Service/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZXJ2aWNlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Service/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZXJ2aWNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZXJ2aWNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/User/Unauthorized.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVbmF1dGhvcml6ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Career/ITI Training - .NET Web Development/Final Project/ServiceProvider/ServiceProvider/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-10o7mcfaf6

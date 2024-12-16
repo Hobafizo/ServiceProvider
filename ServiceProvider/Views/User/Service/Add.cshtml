@@ -1,0 +1,37 @@
+﻿@{
+	ViewData["Title"] = "Add Service";
+}
+
+@model UserService
+
+@if (Model != null && ViewBag.Services != null)
+{
+	<h2 class="alert alert-info text-center">Add Service</h2>
+	
+	<form method="post" class="col-4" asp-controller="User" asp-action="PostAddService" asp-route-userid="@Model.UserId">
+	
+		<div class="form-group">
+			<label asp-for="Service.Name"></label>
+			<select asp-for="ServiceId" asp-items="@ViewBag.Services" class="form-control" aria-describedby="serviceHelp">
+				<option selected disabled>Select...</option>
+			</select>
+	
+			<div class="row">
+				<small id="serviceHelp" class="form-text text-muted">Select service that you want to assign to user.</small>
+				<span asp-validation-for="ServiceId" class="form-text text-danger"></span>
+			</div>
+		</div>
+	
+		<div asp-validation-summary="ModelOnly" class="form-group text-danger pt-3"></div>
+	
+		<div class="mt-2">
+			<button type="submit" class="btn btn-primary">Add</button>
+			<a class="btn btn-danger ms-1" asp-controller="User" asp-action="Service" asp-route-id="@Model.UserId">Back</a>
+		</div>
+	
+	</form>
+}
+else
+{
+	<h3 class="alert alert-danger text-center">Service could not be found.</h3>
+}
